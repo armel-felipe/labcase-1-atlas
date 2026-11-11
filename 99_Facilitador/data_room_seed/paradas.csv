@@ -1,0 +1,238 @@
+﻿parada_id,data_inicio,maquina_id,tipo,categoria_informada,duracao_horas,ordem_producao_id,registrado_por
+PAR-00001,2026-05-05T00:00:00,M-A1,Não planejada,Mecânica,0.7,OP-000032,Turno
+PAR-00002,2026-05-05T00:00:00,M-A1,Setup,Setup prolongado,0.97,OP-000038,Turno
+PAR-00003,2026-05-09T00:00:00,M-A1,Não planejada,Ajuste de processo,1.99,OP-000049,Turno
+PAR-00004,2026-05-06T00:00:00,M-A1,Não planejada,Utilidade,0.44,OP-000092,Turno
+PAR-00005,2026-05-08T00:00:00,M-B1,Não planejada,Mecânica,0.88,OP-000193,Turno
+PAR-00006,2026-05-07T00:00:00,M-B1,Setup,Setup prolongado,1.71,OP-000182,Turno
+PAR-00007,2026-05-07T00:00:00,M-B1,Não planejada,Elétrica,2.11,OP-000180,Turno
+PAR-00008,2026-05-10T00:00:00,M-B1,Não planejada,Mecânica,2.13,OP-000197,Turno
+PAR-00009,2026-05-06T00:00:00,M-C1,Setup,Setup prolongado,1.01,OP-000325,Turno
+PAR-00010,2026-05-09T00:00:00,M-C1,Não planejada,Mecânica,2.04,OP-000320,Turno
+PAR-00011,2026-05-10T00:00:00,M-C1,Não planejada,Ajuste de processo,0.44,OP-000287,Turno
+PAR-00012,2026-05-17T00:00:00,M-A1,Setup,Setup prolongado,0.82,OP-000450,Turno
+PAR-00013,2026-05-15T00:00:00,M-A1,Não planejada,Mecânica,1.57,OP-000352,Turno
+PAR-00014,2026-05-12T00:00:00,M-B1,Não planejada,Utilidade,2.12,OP-000500,Turno
+PAR-00015,2026-05-14T00:00:00,M-B1,Não planejada,Elétrica,1.3,OP-000562,Turno
+PAR-00016,2026-05-11T00:00:00,M-C1,Setup,Setup prolongado,0.65,OP-000613,Turno
+PAR-00017,2026-05-15T00:00:00,M-C1,Não planejada,Elétrica,1.6,OP-000658,Turno
+PAR-00018,2026-05-16T00:00:00,M-C1,Setup,Setup prolongado,1.15,OP-000634,Turno
+PAR-00019,2026-05-12T00:00:00,M-C1,Não planejada,Ajuste de processo,2.15,OP-000588,Turno
+PAR-00020,2026-05-16T00:00:00,M-C1,Setup,Setup prolongado,1.11,OP-000657,Turno
+PAR-00021,2026-05-20T00:00:00,M-A1,Não planejada,Elétrica,1.91,OP-000722,Turno
+PAR-00022,2026-05-23T00:00:00,M-A1,Não planejada,Utilidade,1.99,OP-000695,Turno
+PAR-00023,2026-05-24T00:00:00,M-A1,Não planejada,Mecânica,1.0,OP-000705,Turno
+PAR-00024,2026-05-18T00:00:00,M-A1,Não planejada,Ajuste de processo,0.5,OP-000707,Turno
+PAR-00025,2026-05-24T00:00:00,M-B1,Setup,Setup prolongado,0.97,OP-000898,Turno
+PAR-00026,2026-05-20T00:00:00,M-B1,Não planejada,Ajuste de processo,0.45,OP-000813,Turno
+PAR-00027,2026-05-23T00:00:00,M-B1,Não planejada,Mecânica,1.71,OP-000846,Turno
+PAR-00028,2026-05-18T00:00:00,M-C1,Não planejada,Utilidade,1.63,OP-000905,Turno
+PAR-00029,2026-05-23T00:00:00,M-C1,Não planejada,Ajuste de processo,0.72,OP-000911,Turno
+PAR-00030,2026-05-21T00:00:00,M-C1,Setup,Setup prolongado,1.86,OP-000930,Turno
+PAR-00031,2026-05-27T00:00:00,M-A1,Não planejada,Mecânica,1.5,OP-001047,Turno
+PAR-00032,2026-05-26T00:00:00,M-A1,Não planejada,Mecânica,1.88,OP-001035,Turno
+PAR-00033,2026-05-27T00:00:00,M-B1,Setup,Setup prolongado,1.65,OP-001221,Turno
+PAR-00034,2026-05-29T00:00:00,M-B1,Não planejada,Elétrica,0.95,OP-001173,Turno
+PAR-00035,2026-05-25T00:00:00,M-C1,Setup,Setup prolongado,1.13,OP-001317,Turno
+PAR-00036,2026-05-25T00:00:00,M-C1,Não planejada,Ajuste de processo,1.08,OP-001235,Turno
+PAR-00037,2026-05-31T00:00:00,M-C1,Não planejada,Ajuste de processo,1.33,OP-001306,Turno
+PAR-00038,2026-06-07T00:00:00,M-A1,Setup,Setup prolongado,0.62,OP-001391,Turno
+PAR-00039,2026-06-02T00:00:00,M-A1,Não planejada,Ajuste de processo,0.44,OP-001398,Turno
+PAR-00040,2026-06-01T00:00:00,M-B1,Setup,Setup prolongado,1.03,OP-001441,Turno
+PAR-00041,2026-06-06T00:00:00,M-B1,Setup,Setup prolongado,2.1,OP-001493,Turno
+PAR-00042,2026-06-07T00:00:00,M-B1,Não planejada,Mecânica,1.78,OP-001530,Turno
+PAR-00043,2026-06-07T00:00:00,M-B1,Não planejada,Elétrica,1.93,OP-001546,Turno
+PAR-00044,2026-06-04T00:00:00,M-C1,Não planejada,Utilidade,1.75,OP-001628,Turno
+PAR-00045,2026-06-07T00:00:00,M-C1,Não planejada,Elétrica,1.61,OP-001621,Turno
+PAR-00046,2026-06-06T00:00:00,M-C1,Não planejada,Mecânica,2.15,OP-001645,Turno
+PAR-00047,2026-06-06T00:00:00,M-C1,Não planejada,Elétrica,1.98,OP-001636,Turno
+PAR-00048,2026-06-13T00:00:00,M-A1,Não planejada,Mecânica,0.72,OP-001768,Turno
+PAR-00049,2026-06-10T00:00:00,M-A1,Não planejada,Elétrica,1.8,OP-001659,Turno
+PAR-00050,2026-06-11T00:00:00,M-B1,Não planejada,Ajuste de processo,0.89,OP-001789,Turno
+PAR-00051,2026-06-13T00:00:00,M-B1,Não planejada,Elétrica,1.14,OP-001831,Turno
+PAR-00052,2026-06-11T00:00:00,M-C1,Não planejada,Elétrica,0.65,OP-001916,Turno
+PAR-00053,2026-06-09T00:00:00,M-C1,Não planejada,Elétrica,0.63,OP-001934,Turno
+PAR-00054,2026-06-17T00:00:00,M-A1,Setup,Setup prolongado,1.98,OP-002093,Turno
+PAR-00055,2026-06-18T00:00:00,M-A1,Não planejada,Mecânica,1.1,OP-002082,Turno
+PAR-00056,2026-06-17T00:00:00,M-A1,Não planejada,Elétrica,2.23,OP-002066,Turno
+PAR-00057,2026-06-21T00:00:00,M-B1,Não planejada,Utilidade,2.03,OP-002146,Turno
+PAR-00058,2026-06-21T00:00:00,M-B1,Não planejada,Mecânica,0.56,OP-002165,Turno
+PAR-00059,2026-06-21T00:00:00,M-B1,Não planejada,Mecânica,0.75,OP-002219,Turno
+PAR-00060,2026-06-19T00:00:00,M-B1,Setup,Setup prolongado,0.62,OP-002118,Turno
+PAR-00061,2026-06-21T00:00:00,M-C1,Não planejada,Elétrica,0.84,OP-002239,Turno
+PAR-00062,2026-06-17T00:00:00,M-C1,Não planejada,Ajuste de processo,1.96,OP-002306,Turno
+PAR-00063,2026-06-24T00:00:00,M-A1,Não planejada,Elétrica,2.05,OP-002351,Turno
+PAR-00064,2026-06-25T00:00:00,M-A1,Não planejada,Mecânica,1.86,OP-002347,Turno
+PAR-00065,2026-06-22T00:00:00,M-A1,Setup,Setup prolongado,1.97,OP-002343,Turno
+PAR-00066,2026-06-22T00:00:00,M-B1,Não planejada,Mecânica,1.32,OP-002460,Turno
+PAR-00067,2026-06-22T00:00:00,M-B1,Setup,Setup prolongado,1.64,OP-002543,Turno
+PAR-00068,2026-06-26T00:00:00,M-C1,Não planejada,Elétrica,0.43,OP-002567,Turno
+PAR-00069,2026-06-27T00:00:00,M-C1,Não planejada,Elétrica,1.5,OP-002605,Turno
+PAR-00070,2026-06-23T00:00:00,M-C1,Setup,Setup prolongado,1.93,OP-002569,Turno
+PAR-00071,2026-07-05T00:00:00,M-A1,Não planejada,Elétrica,1.84,OP-002709,Turno
+PAR-00072,2026-06-29T00:00:00,M-A1,Não planejada,Ajuste de processo,1.46,OP-002668,Turno
+PAR-00073,2026-07-04T00:00:00,M-B1,Não planejada,Elétrica,0.83,OP-002879,Turno
+PAR-00074,2026-07-02T00:00:00,M-B1,Não planejada,Mecânica,1.42,OP-002850,Turno
+PAR-00075,2026-07-01T00:00:00,M-B1,Não planejada,Mecânica,1.29,OP-002809,Turno
+PAR-00076,2026-07-02T00:00:00,M-B1,Não planejada,Utilidade,0.85,OP-002866,Turno
+PAR-00077,2026-06-29T00:00:00,M-C1,Não planejada,Mecânica,1.18,OP-002928,Turno
+PAR-00078,2026-07-04T00:00:00,M-C1,Não planejada,Utilidade,1.23,OP-002966,Turno
+PAR-00079,2026-07-02T00:00:00,M-C1,Setup,Setup prolongado,1.8,OP-002957,Turno
+PAR-00080,2026-07-09T00:00:00,M-A1,Não planejada,Elétrica,1.72,OP-002977,Turno
+PAR-00081,2026-07-12T00:00:00,M-A1,Não planejada,Utilidade,2.26,OP-003067,Turno
+PAR-00082,2026-07-09T00:00:00,M-A1,Não planejada,Mecânica,2.19,OP-003069,Turno
+PAR-00083,2026-07-09T00:00:00,M-A1,Setup,Setup prolongado,0.78,OP-003029,Turno
+PAR-00084,2026-07-12T00:00:00,M-B1,Não planejada,Mecânica,0.6,OP-003167,Turno
+PAR-00085,2026-07-06T00:00:00,M-B1,Não planejada,Mecânica,0.81,OP-003192,Turno
+PAR-00086,2026-07-06T00:00:00,M-C1,Não planejada,Elétrica,0.89,OP-003240,Turno
+PAR-00087,2026-07-08T00:00:00,M-C1,Não planejada,Mecânica,1.02,OP-003276,Turno
+PAR-00088,2026-07-12T00:00:00,M-C1,Não planejada,Utilidade,1.32,OP-003247,Turno
+PAR-00089,2026-07-17T00:00:00,M-A1,Não planejada,Utilidade,1.66,OP-003389,Turno
+PAR-00090,2026-07-14T00:00:00,M-A1,Não planejada,Elétrica,0.76,OP-003391,Turno
+PAR-00091,2026-07-17T00:00:00,M-A1,Não planejada,Mecânica,2.43,OP-003319,Turno
+PAR-00092,2026-07-13T00:00:00,M-B1,Não planejada,Elétrica,1.27,OP-003479,Turno
+PAR-00093,2026-07-15T00:00:00,M-B1,Não planejada,Mecânica,2.19,OP-003519,Turno
+PAR-00094,2026-07-18T00:00:00,M-B1,Não planejada,Mecânica,1.01,OP-003492,Turno
+PAR-00095,2026-07-13T00:00:00,M-C1,Não planejada,Ajuste de processo,1.16,OP-003629,Turno
+PAR-00096,2026-07-14T00:00:00,M-C1,Não planejada,Mecânica,1.38,OP-003569,Turno
+PAR-00097,2026-07-18T00:00:00,M-C1,Não planejada,Ajuste de processo,0.94,OP-003613,Turno
+PAR-00098,2026-07-24T00:00:00,M-A1,Não planejada,Mecânica,1.07,OP-003723,Turno
+PAR-00099,2026-07-24T00:00:00,M-A1,Não planejada,Ajuste de processo,2.01,OP-003698,Turno
+PAR-00100,2026-07-23T00:00:00,M-A1,Não planejada,Ajuste de processo,2.44,OP-003722,Turno
+PAR-00101,2026-07-21T00:00:00,M-B1,Não planejada,Ajuste de processo,2.18,OP-003751,Turno
+PAR-00102,2026-07-26T00:00:00,M-B1,Não planejada,Ajuste de processo,0.51,OP-003864,Turno
+PAR-00103,2026-07-22T00:00:00,M-B1,Não planejada,Utilidade,0.53,OP-003755,Turno
+PAR-00104,2026-07-23T00:00:00,M-B1,Setup,Setup prolongado,0.72,OP-003816,Turno
+PAR-00105,2026-07-25T00:00:00,M-C1,Setup,Setup prolongado,1.01,OP-003895,Turno
+PAR-00106,2026-07-23T00:00:00,M-C1,Setup,Setup prolongado,2.07,OP-003889,Turno
+PAR-00107,2026-07-29T00:00:00,M-A1,Não planejada,Mecânica,2.11,OP-004078,Turno
+PAR-00108,2026-07-28T00:00:00,M-A1,Não planejada,Ajuste de processo,1.73,OP-003979,Turno
+PAR-00109,2026-07-29T00:00:00,M-A1,Não planejada,Elétrica,1.15,OP-004027,Turno
+PAR-00110,2026-07-28T00:00:00,M-A1,Não planejada,Elétrica,1.62,OP-003991,Turno
+PAR-00111,2026-07-27T00:00:00,M-B1,Não planejada,Mecânica,1.94,OP-004158,Turno
+PAR-00112,2026-07-28T00:00:00,M-B1,Não planejada,Elétrica,1.58,OP-004088,Turno
+PAR-00113,2026-07-29T00:00:00,M-B1,Não planejada,Mecânica,1.59,OP-004180,Turno
+PAR-00114,2026-08-01T00:00:00,M-B1,Não planejada,Utilidade,0.9,OP-004103,Turno
+PAR-00115,2026-07-29T00:00:00,M-B1,Não planejada,Mecânica,1.69,OP-004118,Turno
+PAR-00116,2026-08-02T00:00:00,M-C1,Não planejada,Ajuste de processo,1.28,OP-004226,Turno
+PAR-00117,2026-07-28T00:00:00,M-C1,Não planejada,Mecânica,1.86,OP-004267,Turno
+PAR-00118,2026-08-04T00:00:00,M-A1,Não planejada,Ajuste de processo,1.91,OP-004307,Turno
+PAR-00119,2026-08-07T00:00:00,M-A1,Não planejada,Elétrica,1.65,OP-004355,Turno
+PAR-00120,2026-08-04T00:00:00,M-B1,Não planejada,Mecânica,0.84,OP-004518,Turno
+PAR-00121,2026-08-05T00:00:00,M-B1,Não planejada,Mecânica,0.43,OP-004461,Turno
+PAR-00122,2026-08-08T00:00:00,M-B1,Não planejada,Mecânica,1.73,OP-004421,Turno
+PAR-00123,2026-08-06T00:00:00,M-C1,Não planejada,Mecânica,1.37,OP-004561,Turno
+PAR-00124,2026-08-06T00:00:00,M-C1,Setup,Setup prolongado,1.67,OP-004535,Turno
+PAR-00125,2026-08-05T00:00:00,M-C1,Setup,Setup prolongado,0.9,OP-004618,Turno
+PAR-00126,2026-08-10T00:00:00,M-A1,Não planejada,Utilidade,2.23,OP-004636,Turno
+PAR-00127,2026-08-11T00:00:00,M-A1,Não planejada,Mecânica,0.89,OP-004672,Turno
+PAR-00128,2026-08-16T00:00:00,M-B1,Não planejada,Mecânica,2.12,OP-004766,Turno
+PAR-00129,2026-08-15T00:00:00,M-B1,Não planejada,Ajuste de processo,2.1,OP-004756,Turno
+PAR-00130,2026-08-14T00:00:00,M-B1,Não planejada,Mecânica,1.52,OP-004819,Turno
+PAR-00131,2026-08-12T00:00:00,M-B1,Não planejada,Mecânica,0.65,OP-004826,Turno
+PAR-00132,2026-08-16T00:00:00,M-C1,Não planejada,Mecânica,2.03,OP-004911,Turno
+PAR-00133,2026-08-11T00:00:00,M-C1,Setup,Setup prolongado,0.56,OP-004876,Turno
+PAR-00134,2026-08-12T00:00:00,M-C1,Setup,Setup prolongado,0.48,OP-004948,Turno
+PAR-00135,2026-08-19T00:00:00,M-A1,Não planejada,Ajuste de processo,2.32,OP-005032,Turno
+PAR-00136,2026-08-19T00:00:00,M-A1,Setup,Setup prolongado,1.86,OP-004957,Turno
+PAR-00137,2026-08-18T00:00:00,M-A1,Não planejada,Mecânica,1.08,OP-004993,Turno
+PAR-00138,2026-08-20T00:00:00,M-A1,Não planejada,Mecânica,1.56,OP-005002,Turno
+PAR-00139,2026-08-21T00:00:00,M-B1,Não planejada,Mecânica,1.58,OP-005137,Turno
+PAR-00140,2026-08-18T00:00:00,M-B1,Não planejada,Elétrica,0.94,OP-005153,Turno
+PAR-00141,2026-08-23T00:00:00,M-B1,Não planejada,Elétrica,2.19,OP-005107,Turno
+PAR-00142,2026-08-18T00:00:00,M-C1,Não planejada,Ajuste de processo,2.01,OP-005246,Turno
+PAR-00143,2026-08-21T00:00:00,M-C1,Não planejada,Elétrica,1.63,OP-005269,Turno
+PAR-00144,2026-08-18T00:00:00,M-C1,Não planejada,Utilidade,0.66,OP-005201,Turno
+PAR-00145,2026-08-19T00:00:00,M-C1,Não planejada,Elétrica,0.86,OP-005278,Turno
+PAR-00146,2026-08-30T00:00:00,M-A1,Não planejada,Mecânica,2.11,OP-005364,Turno
+PAR-00147,2026-08-29T00:00:00,M-A1,Não planejada,Elétrica,1.8,OP-005390,Turno
+PAR-00148,2026-08-27T00:00:00,M-A1,Não planejada,Elétrica,0.96,OP-005340,Turno
+PAR-00149,2026-08-26T00:00:00,M-B1,Setup,Setup prolongado,2.03,OP-005507,Turno
+PAR-00150,2026-08-24T00:00:00,M-B1,Não planejada,Elétrica,1.81,OP-005416,Turno
+PAR-00151,2026-08-29T00:00:00,M-C1,Não planejada,Utilidade,1.77,OP-005544,Turno
+PAR-00152,2026-08-25T00:00:00,M-C1,Não planejada,Ajuste de processo,1.98,OP-005576,Turno
+PAR-00153,2026-09-02T00:00:00,M-A1,Não planejada,Ajuste de processo,2.42,OP-005626,Turno
+PAR-00154,2026-09-03T00:00:00,M-A1,Não planejada,Elétrica,1.5,OP-005680,Turno
+PAR-00155,2026-09-02T00:00:00,M-A1,Não planejada,Elétrica,1.16,OP-005717,Turno
+PAR-00156,2026-09-03T00:00:00,M-A1,Setup,Setup prolongado,1.14,OP-005658,Turno
+PAR-00157,2026-09-06T00:00:00,M-B1,Setup,Setup prolongado,2.1,OP-005814,Turno
+PAR-00158,2026-09-02T00:00:00,M-B1,Não planejada,Mecânica,1.24,OP-005825,Turno
+PAR-00159,2026-09-04T00:00:00,M-B1,Não planejada,Elétrica,1.74,OP-005760,Turno
+PAR-00160,2026-09-01T00:00:00,M-B1,Não planejada,Mecânica,0.45,OP-005770,Turno
+PAR-00161,2026-09-01T00:00:00,M-C1,Setup,Setup prolongado,1.96,OP-005926,Turno
+PAR-00162,2026-09-02T00:00:00,M-C1,Não planejada,Ajuste de processo,1.6,OP-005917,Turno
+PAR-00163,2026-09-03T00:00:00,M-C1,Não planejada,Ajuste de processo,1.69,OP-005887,Turno
+PAR-00164,2026-09-07T00:00:00,M-A1,Setup,Setup prolongado,1.02,OP-006033,Turno
+PAR-00165,2026-09-11T00:00:00,M-A1,Setup,Setup prolongado,1.71,OP-005955,Turno
+PAR-00166,2026-09-11T00:00:00,M-B1,Não planejada,Mecânica,0.81,OP-006128,Turno
+PAR-00167,2026-09-08T00:00:00,M-B1,Não planejada,Ajuste de processo,1.96,OP-006084,Turno
+PAR-00168,2026-09-12T00:00:00,M-B1,Não planejada,Utilidade,1.86,OP-006081,Turno
+PAR-00169,2026-09-11T00:00:00,M-C1,Setup,Setup prolongado,1.44,OP-006203,Turno
+PAR-00170,2026-09-07T00:00:00,M-C1,Não planejada,Mecânica,2.11,OP-006251,Turno
+PAR-00171,2026-09-13T00:00:00,M-C1,Não planejada,Mecânica,1.18,OP-006210,Turno
+PAR-00172,2026-09-10T00:00:00,M-C1,Não planejada,Ajuste de processo,0.5,OP-006206,Turno
+PAR-00173,2026-09-15T00:00:00,M-A1,Não planejada,Ajuste de processo,1.47,OP-006321,Turno
+PAR-00174,2026-09-14T00:00:00,M-A1,Não planejada,Utilidade,1.37,OP-006297,Turno
+PAR-00175,2026-09-15T00:00:00,M-A1,Não planejada,Elétrica,2.36,OP-006273,Turno
+PAR-00176,2026-09-15T00:00:00,M-B1,Não planejada,Utilidade,1.36,OP-006401,Turno
+PAR-00177,2026-09-17T00:00:00,M-B1,Não planejada,Mecânica,1.58,OP-006478,Turno
+PAR-00178,2026-09-18T00:00:00,M-B1,Não planejada,Mecânica,1.19,OP-006490,Turno
+PAR-00179,2026-09-20T00:00:00,M-C1,Não planejada,Elétrica,0.48,OP-006538,Turno
+PAR-00180,2026-09-17T00:00:00,M-C1,Não planejada,Elétrica,0.7,OP-006583,Turno
+PAR-00181,2026-09-20T00:00:00,M-C1,Não planejada,Elétrica,1.24,OP-006565,Turno
+PAR-00182,2026-09-26T00:00:00,M-A1,Não planejada,Elétrica,1.78,OP-006709,Turno
+PAR-00183,2026-09-24T00:00:00,M-A1,Setup,Setup prolongado,1.76,OP-006665,Turno
+PAR-00184,2026-09-21T00:00:00,M-B1,Setup,Setup prolongado,2.19,OP-006758,Turno
+PAR-00185,2026-09-21T00:00:00,M-B1,Não planejada,Ajuste de processo,1.01,OP-006726,Turno
+PAR-00186,2026-09-22T00:00:00,M-B1,Não planejada,Mecânica,1.76,OP-006741,Turno
+PAR-00187,2026-09-22T00:00:00,M-B1,Não planejada,Mecânica,1.74,OP-006839,Turno
+PAR-00188,2026-09-22T00:00:00,M-C1,Não planejada,Ajuste de processo,0.93,OP-006867,Turno
+PAR-00189,2026-09-21T00:00:00,M-C1,Não planejada,Ajuste de processo,0.69,OP-006851,Turno
+PAR-00190,2026-09-24T00:00:00,M-C1,Não planejada,Ajuste de processo,1.65,OP-006858,Turno
+PAR-00191,2026-09-21T00:00:00,M-C1,Não planejada,Mecânica,1.86,OP-006900,Turno
+PAR-00192,2026-09-28T00:00:00,M-A1,Não planejada,Elétrica,1.53,OP-007041,Turno
+PAR-00193,2026-10-04T00:00:00,M-A1,Não planejada,Mecânica,1.34,OP-006975,Turno
+PAR-00194,2026-09-28T00:00:00,M-A1,Não planejada,Mecânica,2.66,OP-006977,Turno
+PAR-00195,2026-10-01T00:00:00,M-B1,Não planejada,Mecânica,1.33,OP-007135,Turno
+PAR-00196,2026-10-03T00:00:00,M-B1,Não planejada,Elétrica,0.93,OP-007161,Turno
+PAR-00197,2026-10-02T00:00:00,M-C1,Não planejada,Elétrica,1.54,OP-007219,Turno
+PAR-00198,2026-10-04T00:00:00,M-C1,Não planejada,Ajuste de processo,1.59,OP-007229,Turno
+PAR-00199,2026-10-11T00:00:00,M-A1,Não planejada,Ajuste de processo,2.53,OP-007343,Turno
+PAR-00200,2026-10-10T00:00:00,M-A1,Não planejada,Utilidade,2.14,OP-007308,Turno
+PAR-00201,2026-10-06T00:00:00,M-A1,Setup,Setup prolongado,2.92,OP-007366,Turno
+PAR-00202,2026-10-10T00:00:00,M-A1,Não planejada,Ajuste de processo,2.26,OP-007362,Turno
+PAR-00203,2026-10-10T00:00:00,M-A1,Não planejada,Mecânica,2.24,OP-007304,Turno
+PAR-00204,2026-10-05T00:00:00,M-B1,Não planejada,Ajuste de processo,1.35,OP-007410,Turno
+PAR-00205,2026-10-06T00:00:00,M-B1,Não planejada,Mecânica,0.63,OP-007430,Turno
+PAR-00206,2026-10-08T00:00:00,M-C1,Setup,Setup prolongado,0.7,OP-007585,Turno
+PAR-00207,2026-10-10T00:00:00,M-C1,Não planejada,Elétrica,1.33,OP-007566,Turno
+PAR-00208,2026-10-11T00:00:00,M-C1,Setup,Setup prolongado,0.75,OP-007542,Turno
+PAR-00209,2026-10-06T00:00:00,M-C1,Não planejada,Ajuste de processo,0.79,OP-007558,Turno
+PAR-00210,2026-10-16T00:00:00,M-A1,Setup,Setup prolongado,1.8,OP-007679,Turno
+PAR-00211,2026-10-14T00:00:00,M-A1,Não planejada,Ajuste de processo,1.87,OP-007627,Turno
+PAR-00212,2026-10-18T00:00:00,M-B1,Não planejada,Elétrica,2.02,OP-007722,Turno
+PAR-00213,2026-10-18T00:00:00,M-B1,Não planejada,Elétrica,0.62,OP-007719,Turno
+PAR-00214,2026-10-16T00:00:00,M-B1,Setup,Setup prolongado,0.63,OP-007805,Turno
+PAR-00215,2026-10-14T00:00:00,M-B1,Setup,Setup prolongado,1.25,OP-007749,Turno
+PAR-00216,2026-10-18T00:00:00,M-C1,Não planejada,Mecânica,1.98,OP-007835,Turno
+PAR-00217,2026-10-12T00:00:00,M-C1,Não planejada,Ajuste de processo,1.53,OP-007884,Turno
+PAR-00218,2026-10-24T00:00:00,M-A1,Setup,Setup prolongado,2.97,OP-007979,Turno
+PAR-00219,2026-10-23T00:00:00,M-A1,Não planejada,Elétrica,2.74,OP-008008,Turno
+PAR-00220,2026-10-20T00:00:00,M-A1,Não planejada,Ajuste de processo,2.35,OP-008024,Turno
+PAR-00221,2026-10-24T00:00:00,M-B1,Não planejada,Elétrica,1.67,OP-008099,Turno
+PAR-00222,2026-10-19T00:00:00,M-B1,Não planejada,Elétrica,1.14,OP-008147,Turno
+PAR-00223,2026-10-23T00:00:00,M-B1,Não planejada,Utilidade,2.18,OP-008088,Turno
+PAR-00224,2026-10-25T00:00:00,M-B1,Setup,Setup prolongado,1.35,OP-008055,Turno
+PAR-00225,2026-10-20T00:00:00,M-B1,Setup,Setup prolongado,0.93,OP-008137,Turno
+PAR-00226,2026-10-23T00:00:00,M-C1,Setup,Setup prolongado,1.71,OP-008189,Turno
+PAR-00227,2026-10-24T00:00:00,M-C1,Não planejada,Mecânica,0.5,OP-008223,Turno
+PAR-00228,2026-10-21T00:00:00,M-C1,Setup,Setup prolongado,1.96,OP-008228,Turno
+PAR-00229,2026-10-23T00:00:00,M-C1,Não planejada,Elétrica,1.16,OP-008214,Turno
+PAR-00230,2026-10-26T00:00:00,M-A1,Não planejada,Mecânica,2.16,OP-008361,Turno
+PAR-00231,2026-11-01T00:00:00,M-A1,Não planejada,Mecânica,2.59,OP-008369,Turno
+PAR-00232,2026-10-27T00:00:00,M-A1,Não planejada,Mecânica,1.61,OP-008316,Turno
+PAR-00233,2026-10-28T00:00:00,M-B1,Setup,Setup prolongado,1.84,OP-008450,Turno
+PAR-00234,2026-10-27T00:00:00,M-B1,Setup,Setup prolongado,1.25,OP-008444,Turno
+PAR-00235,2026-10-28T00:00:00,M-C1,Não planejada,Elétrica,1.21,OP-008573,Turno
+PAR-00236,2026-10-28T00:00:00,M-C1,Não planejada,Ajuste de processo,1.67,OP-008523,Turno
+PAR-00237,2026-11-01T00:00:00,M-C1,Não planejada,Elétrica,2.11,OP-008544,Turno

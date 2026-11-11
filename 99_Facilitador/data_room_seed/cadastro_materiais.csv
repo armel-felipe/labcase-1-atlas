@@ -1,0 +1,13 @@
+﻿material_id,familia,descricao,unidade,custo_unitario,fornecedor_id,estoque_seguranca,lead_time_contratual_dias
+MAT-A01,A,Insumo A-01,kg,18.45,FOR-01,325,17
+MAT-A02,A,Insumo A-02,kg,18.9,FOR-02,350,20
+MAT-A03,A,Insumo A-03,kg,19.35,FOR-03,375,23
+MAT-A04,A,Insumo A-04,kg,19.8,FOR-04,400,26
+MAT-B01,B,Insumo B-01,kg,12.3,FOR-01,325,17
+MAT-B02,B,Insumo B-02,kg,12.6,FOR-02,350,20
+MAT-B03,B,Insumo B-03,kg,12.9,FOR-03,375,23
+MAT-B04,B,Insumo B-04,kg,13.2,FOR-04,400,26
+MAT-C01,C,Insumo C-01,kg,9.22,FOR-01,325,17
+MAT-C02,C,Insumo C-02,kg,9.45,FOR-02,350,20
+MAT-C03,C,Insumo C-03,kg,9.67,FOR-03,375,23
+MAT-C04,C,Insumo C-04,kg,9.9,FOR-04,400,26

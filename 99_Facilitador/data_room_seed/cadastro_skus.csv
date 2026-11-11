@@ -1,0 +1,23 @@
+﻿sku_id,familia,descricao,preco_lista,custo_variavel_ref,material_principal,consumo_ref_kg_por_unidade,unidade
+SKU-A01,A,Componente A-01,1800,1230,MAT-A02,0.65,un
+SKU-A02,A,Componente A-02,1800,1230,MAT-A03,0.65,un
+SKU-A03,A,Componente A-03,1800,1230,MAT-A04,0.65,un
+SKU-A04,A,Componente A-04,1800,1230,MAT-A01,0.65,un
+SKU-A05,A,Componente A-05,1800,1230,MAT-A02,0.65,un
+SKU-A06,A,Componente A-06,1800,1230,MAT-A03,0.65,un
+SKU-A07,A,Componente A-07,1800,1230,MAT-A04,0.65,un
+SKU-A08,A,Componente A-08,1800,1230,MAT-A01,0.65,un
+SKU-B01,B,Componente B-01,1100,840,MAT-B02,0.45,un
+SKU-B02,B,Componente B-02,1100,840,MAT-B03,0.45,un
+SKU-B03,B,Componente B-03,1100,840,MAT-B04,0.45,un
+SKU-B04,B,Componente B-04,1100,840,MAT-B01,0.45,un
+SKU-B05,B,Componente B-05,1100,840,MAT-B02,0.45,un
+SKU-B06,B,Componente B-06,1100,840,MAT-B03,0.45,un
+SKU-B07,B,Componente B-07,1100,840,MAT-B04,0.45,un
+SKU-B08,B,Componente B-08,1100,840,MAT-B01,0.45,un
+SKU-C01,C,Componente C-01,800,730,MAT-C02,0.6,un
+SKU-C02,C,Componente C-02,800,730,MAT-C03,0.6,un
+SKU-C03,C,Componente C-03,800,730,MAT-C04,0.6,un
+SKU-C04,C,Componente C-04,800,730,MAT-C01,0.6,un
+SKU-C05,C,Componente C-05,800,730,MAT-C02,0.6,un
+SKU-C06,C,Componente C-06,800,730,MAT-C03,0.6,un

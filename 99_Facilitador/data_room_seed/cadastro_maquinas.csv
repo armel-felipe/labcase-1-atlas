@@ -1,0 +1,4 @@
+﻿maquina_id,linha,familia_preferencial,horas_semanais_programadas,capacidade_teorica_semanal,data_inicio_operacao
+M-A1,A1,A,80,1450,2018-01-01
+M-B1,B1,B,80,1000,2018-01-01
+M-C1,C1,C,80,650,2018-01-01

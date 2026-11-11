@@ -1,0 +1,16 @@
+Atlas Data Room sintético
+Seed: 20261111
+Janela operacional: 2026-05-04 a 2026-11-01 (26 semanas)
+pedidos: 3,525
+alteracoes_programacao: 344
+expedicoes: 3,139
+producao: 8,580
+paradas: 237
+manutencao: 244
+movimentos: 8,711
+compras: 108
+previsoes: 3,432
+logistica: 3,139
+cadastros: 95
+Total aproximado de linhas: 31,554
+Gerado localmente; todos os nomes e dados são fictícios.
