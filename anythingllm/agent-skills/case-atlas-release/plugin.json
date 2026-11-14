@@ -1,0 +1,86 @@
+{
+  "active": true,
+  "name": "Case Atlas — liberação de dados",
+  "hubId": "case-atlas-release",
+  "schema": "skill-1.0.0",
+  "version": "1.0.0",
+  "description": "Negocia e registra pedidos de CSV do Case Atlas com avaliação separada do facilitador e do stakeholder. Use depois de entender finalidade, arquivo, colunas, período e salvaguardas; o skill obtém identidade e conversa do contexto autenticado do AnythingLLM. Nunca invente IDs de usuário/chat, resultados de papel, caminhos ou colunas.",
+  "author": "Case Atlas",
+  "setup_args": {
+    "CASE_RELEASE_SERVICE_URL": {
+      "type": "string",
+      "required": true,
+      "input": {
+        "type": "text",
+        "default": "http://case-release:8091",
+        "hint": "URL interna do serviço de liberação na rede Docker"
+      },
+      "value": ""
+    },
+    "CASE_RELEASE_API_TOKEN": {
+      "type": "string",
+      "required": true,
+      "input": {
+        "type": "text",
+        "placeholder": "token do serviço, nunca a chave admin do AnythingLLM",
+        "hint": "Credencial interna restrita ao serviço Case Atlas"
+      },
+      "value": ""
+    },
+    "CASE_RELEASE_DOWNLOAD_BASE_URL": {
+      "type": "string",
+      "required": true,
+      "input": {
+        "type": "text",
+        "default": "https://llm.armelfelipe.com.br",
+        "hint": "Base HTTPS autenticada no Caddy para links CSV"
+      },
+      "value": ""
+    }
+  },
+  "examples": [
+    {
+      "prompt": "Peça o recorte de pedidos de setembro e outubro para entender atrasos, somente com ID, data e quantidade.",
+      "call": "{\"stakeholder_id\":\"lucas\",\"file\":\"pedidos.csv\",\"purpose\":\"analisar atrasos por semana\",\"safeguards\":\"somente ID, data e quantidade; sem atribuir culpa\",\"columns\":\"[\\\"pedido_id\\\",\\\"data_pedido\\\",\\\"quantidade_pedida\\\"]\",\"date_from\":\"2026-09-01\",\"date_to\":\"2026-10-31\"}"
+    },
+    {
+      "prompt": "Solicite o cadastro de clientes para cruzar região com nível de serviço, usando apenas campos agregados necessários.",
+      "call": "{\"stakeholder_id\":\"ana\",\"file\":\"cadastro_clientes.csv\",\"purpose\":\"segmentar o nível de serviço por região\",\"safeguards\":\"não expor dados pessoais nem termos individuais\",\"columns\":\"[\\\"cliente_id\\\",\\\"regiao\\\",\\\"classe_servico\\\"]\",\"date_from\":\"\",\"date_to\":\"\"}"
+    }
+  ],
+  "entrypoint": {
+    "file": "handler.js",
+    "params": {
+      "stakeholder_id": {
+        "description": "Persona entrevistada que participa da negociação: helena, roberto, marcos, ana, lucas ou beatriz.",
+        "type": "string",
+        "enum": ["helena", "roberto", "marcos", "ana", "lucas", "beatriz"]
+      },
+      "file": {
+        "description": "Nome exato de um CSV do catálogo fechado do Case Atlas.",
+        "type": "string"
+      },
+      "purpose": {
+        "description": "Finalidade analítica e decisão que este recorte ajudará a tomar.",
+        "type": "string"
+      },
+      "safeguards": {
+        "description": "Salvaguardas combinadas: anonimização, agregação, IDs necessários ou limites de uso.",
+        "type": "string"
+      },
+      "columns": {
+        "description": "JSON array de nomes exatos de colunas do catálogo. Exemplo: [\"pedido_id\",\"data_pedido\"].",
+        "type": "string"
+      },
+      "date_from": {
+        "description": "Data inicial inclusiva YYYY-MM-DD, ou string vazia quando não aplicável.",
+        "type": "string"
+      },
+      "date_to": {
+        "description": "Data final inclusiva YYYY-MM-DD, ou string vazia quando não aplicável.",
+        "type": "string"
+      }
+    }
+  },
+  "imported": true
+}

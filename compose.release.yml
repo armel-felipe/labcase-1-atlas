@@ -1,0 +1,41 @@
+services:
+  case-release:
+    build:
+      context: .
+      dockerfile: Dockerfile.release
+    restart: unless-stopped
+    environment:
+      CASE_RELEASE_SOURCE_DIR: /app/facilitator/data_room_seed
+      CASE_RELEASE_FACILITATOR_DIR: /app/facilitator
+      CASE_RELEASE_STORAGE_DIR: /app/storage
+      CASE_RELEASE_HOST: 0.0.0.0
+      CASE_RELEASE_PORT: 8091
+      CASE_RELEASE_API_TOKEN: ${CASE_RELEASE_API_TOKEN:?Set CASE_RELEASE_API_TOKEN in .env}
+      CASE_RELEASE_DOWNLOAD_TOKEN: ${CASE_RELEASE_DOWNLOAD_TOKEN:?Set CASE_RELEASE_DOWNLOAD_TOKEN in .env}
+    volumes:
+      - ./99_Facilitador:/app/facilitator:ro
+      - ${CASE_RELEASE_STORAGE_PATH:-/opt/agent-projects/case_lab/case_release_storage}:/app/storage
+    networks:
+      anythingllm:
+        aliases:
+          - case-release
+      caddy:
+        aliases:
+          - case-release
+    healthcheck:
+      test:
+        - CMD
+        - python3
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8091/health', timeout=2)"
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+networks:
+  anythingllm:
+    external: true
+    name: anythingllm-ykt4_default
+  caddy:
+    external: true
+    name: casa-girassois_default

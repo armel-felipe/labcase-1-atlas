@@ -22,7 +22,7 @@ O facilitador preparou um Data Room de seis meses, 4 de maio a 1º de novembro d
 
 ## Como pedir
 
-No Work, usem uma requisição específica, por exemplo:
+Na simulação, usem uma requisição específica, por exemplo:
 
 > Liberar `pedidos.csv`, `expedicoes.csv` e `cadastro_clientes.csv` de 7/9 a 1/11. Objetivo: medir backlog por idade, cliente e completude. Precisamos dos IDs, datas prometidas e efetivas, quantidades e tipo de frete. Favor entregar os dados sem diagnóstico ou interpretação.
 
