@@ -16,13 +16,25 @@ O Case Lab é uma simulação compartilhada de consultoria. A pasta do projeto n
 flowchart TD
     C["Consultores<br/>contas individuais"] --> A["AnythingLLM<br/>Multi-user"]
     A --> W["Workspace compartilhado<br/>Case Atlas · Agent Mode"]
-    W --> L["Modelo LLM<br/>provider compatível com OpenAI"]
+    W --> L["Modelo LLM<br/>generic-openai · router.hostinger.com"]
     W --> F["File System Agent<br/>ferramenta do workspace"]
+    W --> S["Custom Agent Skill<br/>chamadas estruturadas"]
 
     VPS["Pasta viva na VPS<br/>/opt/agent-projects/case_lab"]
     VPS --> P["00_Para_Consultores<br/>leitura"]
     VPS --> M["memoria/<br/>leitura e escrita"]
     VPS --> X["99_Facilitador<br/>fora dos mounts"]
+    S --> R["Serviço privado de liberação<br/>consenso + validação + exportação"]
+    S -->|"pedido + IDs confiáveis<br/>workspace, usuário, chat"| R
+    R -->|"política + perfil selecionado"| S
+    S -->|"últimas 12 mensagens + contexto<br/>duas avaliações role-play"| L
+    L -->|"decisões estruturadas"| S
+    S -->|"decisões do facilitador<br/>e stakeholder"| R
+    X -->|"somente leitura"| R
+    R --> DB["Registro SQLite<br/>pedidos, decisões, hashes"]
+    R --> ART["Artefatos CSV persistentes"]
+    ART -->|"link estável<br/>sem expiração automática"| GATE["Caddy<br/>Basic Auth individual + token interno"]
+    GATE --> C
 
     F -->|"consulta fontes do caso"| P
     F -->|"consulta memória compartilhada"| M
@@ -37,6 +49,8 @@ flowchart TD
 ```
 
 Os consultores entram com contas individuais no AnythingLLM e usam o workspace compartilhado. O Agent Mode conduz a conversa com o modelo configurado e pode acionar o File System Agent para ler o briefing, as personas e a memória. A ata é apresentada ao consultor; a gravação na pasta compartilhada só deve ocorrer depois de uma confirmação explícita. Outros usuários podem consultar os arquivos salvos em conversas futuras.
+
+Para liberação de arquivos de dados, o custom Agent Skill chama um serviço privado fora do AnythingLLM. Esse serviço é o único componente autorizado a ler `99_Facilitador/`, montada nele somente em leitura. Ele fornece ao modelo apenas a política geral e o perfil da persona selecionada; o modelo faz duas avaliações separadas como facilitador e stakeholder, usando também as últimas 12 mensagens do chat. O CSV original e suas linhas não são enviados ao modelo. O serviço exige que ambas as avaliações permitam o escopo, valida colunas e período no catálogo fechado, exporta uma cópia CSV e registra a conversa de origem e os hashes. A cópia fica disponível por link estável, sem expiração automática, atrás de autenticação individual do Caddy. Detalhes em [Fluxo de liberação de dados](docs/fluxo-liberacao-de-dados.md).
 
 O AnythingLLM recebe dois mounts específicos: `00_Para_Consultores/` em somente leitura e `memoria/` em leitura e escrita. `99_Facilitador/` fica fora dos mounts. O GitHub privado é usado para versionamento manual; não participa da execução do workspace nem sincroniza arquivos automaticamente.
 
@@ -53,7 +67,7 @@ Essas verificações validam os dados e o isolamento dos mounts, mas ainda não 
 
 ## GitHub do projeto
 
-Nenhuma integração ou configuração do GitHub é necessária para o AnythingLLM funcionar. O workspace usa a pasta viva da VPS; o repositório privado `armel-felipe/labcase-1-atlas` serve para versionamento. A sincronização entre a VPS e o GitHub continua manual. Para publicar este fluxo e as validações como documentação do projeto, sincronize e faça commit do `README.md` no repositório privado.
+Nenhuma integração ou configuração do GitHub é necessária para o AnythingLLM funcionar. O workspace usa a pasta viva da VPS; o repositório privado `armel-felipe/labcase-1-atlas` serve para versionamento manual do código e da documentação. O fluxo de liberação e seu diagrama estão documentados neste README e em [Fluxo de liberação de dados](docs/fluxo-liberacao-de-dados.md).
 
 ## Pastas que o AnythingLLM pode acessar
 
@@ -68,7 +82,17 @@ Não monte `99_Facilitador/`, nem a pasta-pai `case_lab/`. Isso mantém os mater
 
 ## Configuração resumida
 
-Os passos e o texto pronto para o workspace estão em [CONFIGURAR_ANYTHINGLLM.md](CONFIGURAR_ANYTHINGLLM.md). O guia define a experiência de uso e o procedimento simples para ativar o Agent Mode, criar contas e limitar as pastas acessíveis.
+O Agent Mode mantém o fluxo de entrevistas. Para pedidos de dados, veja as etapas, os limites de acesso e o estado operacional em [Fluxo de liberação de dados](docs/fluxo-liberacao-de-dados.md).
+
+## Liberação de dados do facilitador
+
+O serviço de liberação mantém `99_Facilitador/` fora dos mounts do AnythingLLM, registra decisões em SQLite e produz cópias CSV imutáveis. A implementação está ativa na VPS; este repositório documenta o fluxo, sem tokens ou credenciais da implantação. O código e os arquivos Compose usados na VPS permanecem no checkout `/opt/agent-projects/case_lab` e não fazem parte desta atualização documental. A rota ativa no Caddy exige autenticação Basic individual da equipe. Consulte [Fluxo de liberação de dados](docs/fluxo-liberacao-de-dados.md).
+
+A integração está ativa na VPS: o serviço de liberação não publica porta no host, o custom Agent Skill está instalado no armazenamento persistente do AnythingLLM, e a rota de download do Caddy exige Basic Auth individual. O teste da fronteira retornou `401` sem credenciais e alcançou o serviço com as três contas válidas. Ainda não foi publicado nenhum CSV. Falta testar uma invocação real pelo chat para confirmar os metadados internos de usuário e conversa.
+
+Para cada pedido novo, o skill envia as últimas 12 mensagens relevantes e o contexto de política/persona ao provider LLM configurado no workspace, em duas avaliações de role-play. No ambiente verificado, o provider é `generic-openai` com endpoint `router.hostinger.com`. O CSV original e suas linhas não são enviados ao modelo. A integração foi ativada após autorização para esse tratamento; faça um primeiro pedido vago pelo chat e confirme que ele pede esclarecimento antes de solicitar dados reais.
+
+Após atualizar/recarregar a página do AnythingLLM, abra uma conversa nova no workspace Case Atlas; a skill aparecerá entre as ferramentas do agente. As credenciais Basic Auth são individuais e ficam armazenadas com acesso restrito na VPS. Ao adicionar um consultor à instância, provisionar também uma credencial de download individual no Caddy.
 
 ## Limites importantes
 
@@ -82,6 +106,6 @@ Os passos e o texto pronto para o workspace estão em [CONFIGURAR_ANYTHINGLLM.md
 
 ## Estado da implantação
 
-Em 13/11/2026, o mount de memória foi aplicado na VPS e o container AnythingLLM confirmou os mounts dos materiais de consultoria (somente leitura) e da memória (leitura e escrita). O conteúdo de `00_Para_Consultores/` e a estrutura inicial de `memoria/` deste checkout foram sincronizados para a pasta oficial na VPS. `99_Facilitador/` ficou fora da sincronização e dos mounts.
+Em 13/11/2026, foram confirmados na VPS os mounts dos materiais de consultoria (somente leitura) e da memória (leitura e escrita). `99_Facilitador/` ficou fora dos mounts do AnythingLLM. O serviço de liberação de dados, o skill e a rota autenticada do Caddy estão ativos.
 
-Pendente: configurar Agent Mode e File System Agent no workspace Case Atlas, colar as instruções e executar o piloto de entrevista. A sincronização para o GitHub continua manual.
+Pendente: executar um piloto real pelo chat autenticado do AnythingLLM para confirmar a invocação do skill, a captura dos identificadores internos do usuário e da conversa e o comportamento do provider. Nenhum CSV foi liberado até o momento. A sincronização para o GitHub continua manual.
